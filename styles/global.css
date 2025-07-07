@@ -1,0 +1,114 @@
+/* Fichier transféré  */
+/* Fichier pas encore validé */
+
+:root {
+  /* Fonts */
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Roboto Mono", monospace;
+
+  /* Colors */
+  --clr-dark: #110001;
+  --clr-white: #fff;
+  --clr-light: #e2e8f0;
+  --clr-red: #e30613;
+  --clr-yellow: #fcea01;
+
+  /* Sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: calc(1em+0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--clr-white);
+  color: var(--clr-dark);
+  min-width: 320px;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: solid var(--clr-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.025em;
+}
+
+p {
+  color: var(--clr-dark);
+}
+
+a {
+  color: var(--clr-dark);
+  text-decoration: none;
+  display: inline-block;
+}
+
+strong {
+  color: var(--clr-light);
+  font-weight: 900;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-red);
+}

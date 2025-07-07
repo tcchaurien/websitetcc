@@ -1,0 +1,88 @@
+.licencies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: auto;
+  gap: 1rem;
+}
+
+.licencies__logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+  align-self: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.licencies__overview_description span {
+  font-size: var(--size-6xl);
+}
+
+.licencies__overview_detail {
+  display: flex;
+}
+
+.logo__tenup {
+  width: 7rem;
+  display: block;
+  border-radius: 15px;
+  margin: 0 auto;
+  transition: 0.15s ease-in-out;
+}
+.logo__tenup:hover {
+  scale: 120%;
+}
+
+.licencies__diaporama {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 0.5rem;
+  border-radius: 15px;
+}
+
+.licencies__diaporama_photo {
+  height: 120px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+  .licencies__diaporama {
+    padding: 0 !important;
+  }
+}
+
+/* @media (min-width: 475px) {} */
+
+/* md */
+@media (min-width: 768px) {
+  .licencies__diaporama_photo {
+    height: 140px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .licencies {
+    flex-direction: row;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .licencies__diaporama_photo {
+    height: 170px;
+  }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link rel="canonical" href="https://tcchaurien.fr/tarifs.html" />
+    <link rel="stylesheet" href="./styles/moder-normalize.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/components/tarifs.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/utils.css" />
+    <title>TC Chaurien - Tarifs</title>
+    <meta
+      name="description"
+      content="Découvrez les offres et tarifs du TC Chaurien, Club de Tennis de la vile de Castelnaudary"
+    />
+    <meta name="keywords" content="tennis, club, castelnaudary, tarifs, tcchaurien, tcc, tc chaurien, chaurien" />
+    <meta name="author" content="Thomas P." />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FGL197VBSP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FGL197VBSP");
+    </script>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__title_container box" data-aos="fade-down-right">
+        <a href="/index.html">  
+          <img
+            src="/img/logo.png"
+            alt="Logo du club"
+            width="150"
+            height="150"
+            class="header__logo"
+          />
+        </a>  
+        <h2 class="header__title">TC CHAURIEN</h2>
+      </div>
+      <nav>
+        <input type="checkbox" id="sidebar-active" />
+        <label id="overlay" for="sidebar-active"></label>
+        <div class="header__menu box" data-aos="fade-down">
+          <label for="sidebar-active" class="close-sidebar-button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </label>
+          <img
+            src="/img/logo blanc.png"
+            alt="logo blanc"
+            class="header__logo_sidebar"
+          />
+          <ul class="header__menu_list">
+            <li class="header__menu_items">
+              <a href="/index.html" class="header__menu_link"
+                >Le Club
+              </a>
+            </li>
+            <li class="header__menu_items">
+              <a href="/cours.html" class="header__menu_link">Les Cours </a>
+                </a>
+            </li>
+            <li class="header__menu_items">
+              <a href="/tarifs.html" class="header__menu_link">Les Tarifs </a>
+                <ul class="header__submenu box">
+                  <li class="header__submenu_items">
+                    <a href="#section_tarifs_membres" class="header__submenu_link"
+                      >Carte et Licence</a
+                    >
+                  </li>
+                  <li class="header__submenu_items">
+                    <a href="#section_tarifs_cours" class="header__submenu_link">Cours</a>
+                  </li>
+
+                  <li class="header__submenu_items">
+                    <a href="#section_modalite" class="header__submenu_link"
+                      >Modalités Paiement</a
+                    >
+                  </li>
+                </ul>
+            </li>
+            <li class="header__menu_items contact_menu">
+              <a href="/contact.html" class="header__menu_link">Contacts </a>
+            </li>
+          </ul>
+          <div class="header__mobile_social_container">
+            <a
+              href="https://www.facebook.com/people/TC-Chaurien/61565931810032/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="header__mobile_social_icons"
+              title="Facebook"
+              aria-label="facebook link"
+            >
+              <i class="lni lni-facebook-original"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/tcchaurien/"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="header__mobile_social_icons"
+              title="Instagram"
+              aria-label="instagram link"
+            >
+              <i class="lni lni-instagram-original"></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+      <div class="header__button_container box" data-aos="fade-down-left">
+        <div class="header__social_container">
+          <a
+            href="https://www.facebook.com/people/TC-Chaurien/61565931810032/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="header__social_icons"
+            title="Facebook"
+            aria-label="facebook link"
+          >
+            <i class="lni lni-facebook-original"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/tcchaurien/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="header__social_icons"
+            title="Instagram"
+            aria-label="instagram link"
+          >
+            <i class="lni lni-instagram-original"></i
+          ></a>
+        </div>
+        <a href="contact.html" class="header__button btn">Contact</a>
+      </div>
+      <label for="sidebar-active" class="open-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+      </label>
+    </header>
+    <section class="tarifs container" id="section_tarifs">
+      <div
+        class="tarifs__overview_container main_card_container"
+        data-aos="flip-right"
+      >
+        <h2
+          class="tarifs__overview_title main_card_title"
+          data-aos="flip-right"
+        >
+          Les Tarifs
+        </h2>
+        <p class="tarifs__overview_description main_card_desc">
+          Le TC Chaurien propose différents tarifs pour l'adhésion au club et
+          les différents cours Jeune et Adutles.
+        </p>
+        <p class="tarifs__overview_comment main_card_comment">
+          Découvrez nos différentes offres ci-dessous et sur <strong><a href="https://tenup.fft.fr/club/60110028/offres" target="_blank" style="color: #170647;">Tenup</a></strong>
+        </p>
+        <ul class="tarifs__overview_list main_card_list">
+          <li class="tarifs__overview_list_item main_card_item">
+            <div class="tarifs__overview_list_title main_card_item_title">
+              Carte de Membre
+            </div>
+            <p class="tarifs__overview_list_description main_card_item_desc">
+              L'adhésion au club est obligatoire pour profiter de nos
+              terrains. <br /><br />Différentes offres sont proposées :
+              Adultes, Couples Adultes, Enfants et Adultes/Couples avec
+              enfants.
+            </p>
+          </li>
+          <li class="tarifs__overview_list_item main_card_item">
+            <div class="tarifs__overview_list_title main_card_item_title">
+              Les Cours Adultes
+            </div>
+            <div>
+              <p
+                class="tarifs__overview_list_description main_card_item_desc"
+              >
+                Les cours adultes collectifs sont dispensés en soirée la
+                semaine. 2 offres pour les cours collectifs : 1h30 par semaine
+                et 2 x 1h30 par semaine
+
+                <br /><br />
+                Des seances individuelles sont également possibles.
+              </p>
+            </div>
+          </li>
+          <li class="tarifs__overview_list_item main_card_item">
+            <div class="tarifs__overview_list_title main_card_item_title">
+              Les Cours Jeunes
+            </div>
+            <p class="tarifs__overview_list_description main_card_item_desc">
+              Plusieurs offres par niveau et âge sont proposées aux jeunes
+              joueurs de Castelnaudary.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="tarifs__membres container" id="section_tarifs_membres">
+      <div class="tarifs__adhesion_container">
+        <h2 class="tarifs__adhesion_title section_title">
+          Les Cartes Membres
+        </h2>
+        <p class="tarifs__adhesion_card_comment">
+          Tarif par an avec licence FFT | Saison 2024-2025
+        </p>
+        <div class="tarifs__adhesion_card_container box">
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">1 Enfant</h3>
+            <p class="tarifs__adhesion_card_description">68€</p>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">1 Adulte</h3>
+            <h2 class="tarifs__adhesion_card_description">126€</h2>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">1 Adulte + 1 Enfant</h3>
+            <h2 class="tarifs__adhesion_card_description">169€</h2>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">1 Adulte + 2 Enfants</h3>
+            <h2 class="tarifs__adhesion_card_description">233€</h2>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">1 Adulte + 3 Enfants</h3>
+            <h2 class="tarifs__adhesion_card_description">274€</h2>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">Couple Adultes</h3>
+            <h2 class="tarifs__adhesion_card_description">222€</h2>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">Couple + 1 Enfant</h3>
+            <h2 class="tarifs__adhesion_card_description">268€</h2>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">Couple + 2 Enfant</h3>
+            <h2 class="tarifs__adhesion_card_description">319€</h2>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">Couple + 3 Enfant</h3>
+            <h2 class="tarifs__adhesion_card_description">355€</h2>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">Couple + 4 Enfant</h3>
+            <h2 class="tarifs__adhesion_card_description">400€</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tarifs__cours container" id="section_tarifs_cours">
+      <div class="tarifs__adhesion_container">
+        <h2 class="tarifs__adhesion_title section_title">
+          Les Cours Adultes
+        </h2>
+        <p class="tarifs__adhesion_card_comment">Tarif par an | Saison 2024-2025</p>
+        <div class="tarifs__adhesion_card_container box">
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">Collectif 1H30</h3>
+            <h2 class="tarifs__adhesion_card_description">280€</h2>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">Collectif 2x1H30</h3>
+            <h2 class="tarifs__adhesion_card_description">500€</h2>
+          </div>
+          
+        </div>
+      </div>
+      <div class="tarifs__adhesion_container">
+        <h2 class="tarifs__adhesion_title section_title">
+          Les Cours Jeunes
+        </h2>
+        <p class="tarifs__adhesion_card_comment">Tarif par an | Saison 2024-2025</p>
+        <div class="tarifs__adhesion_card_container box">
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">Mini-Tennis 1H</h3>
+            <h2 class="tarifs__adhesion_card_description">100€</h2>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">Mini-Tennis 2x1H</h3>
+            <h2 class="tarifs__adhesion_card_description">170€</h2>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">Club Junior 1H30</h3>
+            <h2 class="tarifs__adhesion_card_description">120€</h2>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">Club Junior 2x1H30</h3>
+            <h2 class="tarifs__adhesion_card_description">220€</h2>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">Compétition 1H30</h3>
+            <h2 class="tarifs__adhesion_card_description">210€</h2>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">Compétition 2x1H30</h3>
+            <h2 class="tarifs__adhesion_card_description">350€</h2>
+          </div>
+      
+        </div>  
+      </div>
+      <div class="tarifs__adhesion_container">
+        <h2 class="tarifs__adhesion_title section_title">
+          Cours Individuel
+        </h2>
+        <p class="tarifs__adhesion_card_comment">Avec un coach | Tarif par heure</p>
+        <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+          <h3 class="tarifs__adhesion_card_title">1H</h3>
+          <p class="tarifs__adhesion_card_description">25€</p>
+        </div>
+      
+        </div>  
+      </div>
+
+
+    </section>
+    <section class="modalite container" id="section_modalite">
+      <div class="modalite_container">
+        <h2 class="modalite__title section_title">Modalités de Paiement</h2>
+        <p
+          class="tarifs__adhesion_card_comment tarifs__adhesion_card_comment"
+        >
+          Plusieurs modalités de paiement disponibles
+        </p>
+        <div class="tarifs__adhesion_card_container box">
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">
+              Paiement par chèque UNIQUEMENT
+            </h3>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">
+              En plusieurs fois <br>(de 1 à 10 fois)
+            </h3>
+          </div>
+          <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
+            <h3 class="tarifs__adhesion_card_title">Pass SPORT</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer container" data-aos="zoom-in">
+      <div class="footer__contact box">
+        <div class="contact__telephone">
+          <img
+            src="/img/contact.jpg"
+            alt="Balle qui téléphone"
+            class="contact__image"
+          />
+          <h2>04-68-23-46-36</h2>
+        </div>
+        <div class="contact__email">
+          <img
+            src="/img/email.jpg"
+            alt="Ordinateur avec une balle"
+            class="contact__image"
+          />
+          <a href="mailto:tcchaurien11@gmail.com" class="contact__email_link"
+            >tcchaurien11@gmail.com</a
+          >
+        </div>
+        <div class="contact__adresse">
+          <img
+            src="/img/carte.jpg"
+            alt="Balle qui lit une carte"
+            class="contact__image"
+          />
+          <div class="contact__telephone_adresse">
+            Av. du Maréchal Leclerc,<br />
+            11400 Castelnaudary
+          </div>
+        </div>
+        <iframe
+          class="google__map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d943.3201409255677!2d1.9487295209530184!3d43.31579212173161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sfr!4v1723119291061!5m2!1sfr!2sfr"
+          width="200"
+          height="100"
+          style="border: 0"
+          allowfullscreen="true"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <h2 class="footer__title">TC Chaurien</h2>
+      <p>🎾 2025 🎾</p>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- <div style="height: 500vh"></div> -->
+    <div class="script">
+      <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+      <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+          scrollFunction();
+        };
+
+        function scrollFunction() {
+          if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+          ) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+      </script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    </div>
+  </body>
+</html>

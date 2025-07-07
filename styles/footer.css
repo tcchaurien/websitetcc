@@ -1,0 +1,121 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  z-index: 7;
+  gap: 1rem;
+  background-color: var(--clr-white);
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  width: 280px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  background: linear-gradient(to bottom, var(--clr-red), var(--clr-yellow));
+}
+
+.contact__image {
+  height: 60px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact__telephone,
+.contact__email,
+.contact__adresse,
+.contact__email_link {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: var(--size-sm);
+  font-weight: 700;
+  color: white;
+  font-family: var(--font-secondary);
+}
+/* 
+.contact_email {
+  display: flex;
+  gap: 0.5rem;
+  font-size: var(--size-sm);
+  font-weight: 700;
+  color: white;
+
+  font-family: var(--open-sans);
+}
+
+.contact__Adresse {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: var(--open-sans);
+} */
+
+.google__map {
+  border-radius: 5px;
+  width: 90%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close-footer-button {
+  fill: black;
+}
+
+/* Mobile first */
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+
+@media (min-width: 1024px) {
+  .footer__contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+  }
+
+  .contact__telephone,
+  .contact__email,
+  .contact__adresse {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: var(--size-xxs);
+  }
+
+  .google__map {
+    width: 300px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .contact__telephone,
+  .contact__email,
+  .contact__adresse {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: var(--size-xs);
+  }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

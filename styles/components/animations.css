@@ -1,0 +1,57 @@
+.animations {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: auto;
+}
+
+.animations__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 15px;
+}
+
+.animations__content div {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  width: 280px;
+  height: auto;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, var(--clr-red), var(--clr-yellow));
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.animations__content div img {
+  height: 150px;
+  width: 150px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.animations__content div h3 {
+  color: var(--clr-white);
+  font-family: var(--font-secondary);
+  font-size: var(--size-2xl);
+  line-height: 1.2;
+}
+
+.animations__content div p {
+  font-weight: 600;
+  font-size: var(--size-base);
+}
+
+.animations__content div ul {
+  font-weight: 600;
+  font-size: var(--size-base);
+}

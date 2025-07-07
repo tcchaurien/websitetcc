@@ -1,0 +1,93 @@
+.equipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.image__cours {
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.733);
+  height: 250px;
+}
+
+.cours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: 1rem;
+}
+
+.coach__presentation_front,
+.coach__presentation_back {
+  background-image: url(/img/prof.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.coach__presentation_front_1,
+.coach__presentation_back_1 {
+  background-image: url(/img/photos/coach1.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.coach__presentation_front_2,
+.coach__presentation_back_2 {
+  background-image: url(/img/prof.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.equipe_pedagogique__presentation_front,
+.coach__presentation_back {
+  background-image: url(/img/autre.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+
+/* Mobile first */
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+@media (min-width: 768px) {
+  .cours {
+    flex-direction: row;
+    justify-items: center;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .equipe {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .equipe {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .image__cours {
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.733);
+  }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

@@ -1,0 +1,85 @@
+.tarifs,
+.tarifs__membres,
+.tarifs__cours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.tarifs__adhesion_container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tarifs__adhesion_card_comment {
+  font-size: var(--size-sm);
+}
+
+.tarifs__adhesion_card_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  max-width: 860px;
+}
+
+.card__tarif {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  flex-grow: 1;
+  align-items: center;
+  gap: 0.5rem;
+  width: 125px;
+  height: 125px;
+  min-width: 125px;
+  padding: 1rem;
+  justify-content: center;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, var(--clr-red), var(--clr-yellow));
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.tarifs__adhesion_card_title {
+  text-align: center;
+  color: var(--clr-white);
+  font-family: var(--font-secondary);
+  font-size: var(--size-sm);
+}
+.tarifs__adhesion_card_description {
+  text-align: center;
+  color: var(--clr-white);
+  font-size: var(--size-3xl);
+  font-weight: 600;
+  font-family: var(--font-secondary);
+}
+
+.modalite_container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Mobile first */
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

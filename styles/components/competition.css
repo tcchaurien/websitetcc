@@ -1,0 +1,98 @@
+.competition {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: start;
+  padding: 0 !important;
+  gap: 0.5rem;
+}
+
+.competition__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem !important;
+  width: 99%;
+  height: auto;
+  background-image: url(/img/fond.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 25px;
+}
+.competition__description {
+  width: 35ch;
+  padding-inline: 1rem;
+}
+
+.competition__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 280px;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.competition__card_title {
+  font-family: var(--font-secondary);
+  text-align: center;
+}
+
+.competition__card_list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.competition__card_item {
+  padding: 0;
+}
+
+.competition__card_item_title {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: var(--size-base);
+  font-weight: 700;
+  font-family: var(--font-secondary);
+}
+
+.competition__card_item_desc {
+  font-weight: 600;
+  font-size: var(--size-sm);
+}
+
+/* Mobile first */
+/* xs */
+@media (min-width: 475px) {
+  .competition__description {
+    width: 45ch;
+  }
+}
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+@media (min-width: 1024px) {
+  .competition__container {
+    justify-content: center;
+    gap: 2rem;
+  }
+  .competition__card {
+    width: 340px;
+  }
+}
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
