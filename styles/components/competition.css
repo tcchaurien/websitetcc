@@ -1,58 +1,70 @@
+/* Fichier transféré */
+/* Fichier pas encore validé */
+
+/* Section compétition : disposition en colonne, alignée à gauche, sans wrapping */
 .competition {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: start;
-  padding: 0 !important;
-  gap: 0.5rem;
+  padding: 0 !important; /* Suppression du padding */
+  gap: 0.5rem; /* Espacement réduit entre les éléments */
 }
 
+/* Conteneur principal des compétitions : disposition flexible avec image de fond */
 .competition__container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-evenly; /* Espacement uniforme des éléments */
   align-items: start;
-  gap: 1rem;
-  flex-wrap: wrap;
-  padding: 1rem !important;
-  width: 99%;
-  height: auto;
-  background-image: url(/img/fond.jpg);
+  gap: 1rem; /* Espacement entre les cartes */
+  flex-wrap: wrap; /* Permet le wrapping pour les petits écrans */
+  padding: 1rem !important; /* Padding forcé */
+  width: 99%; /* Presque pleine largeur */
+  height: auto; /* Hauteur adaptative au contenu */
+  background-image: url(/img/fond.jpg); /* Image de fond */
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
-  border-radius: 25px;
+  background-size: cover; /* Couvre tout le conteneur */
+  background-position: 50%; /* Centrage de l'image */
+  border-radius: 25px; /* Bords arrondis */
 }
+
+/* Description de la section compétition : largeur limitée pour lisibilité */
 .competition__description {
-  width: 35ch;
+  width: 35ch; /* Limite à 35 caractères par ligne */
   padding-inline: 1rem;
 }
 
+/* Carte individuelle de compétition : fond semi-transparent, disposition en colonne */
 .competition__card {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  width: 280px;
+  gap: 0.5rem; /* Espacement réduit entre les éléments */
+  width: 280px; /* Largeur fixe pour mobile */
   padding: 1.5rem;
   border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
 }
 
+/* Titre des cartes de compétition : centré avec police spécifique */
 .competition__card_title {
   font-family: var(--font-secondary);
   text-align: center;
 }
 
+/* Liste des éléments dans les cartes : disposition en colonne sans puces */
 .competition__card_list {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.5rem; /* Espacement réduit entre les éléments */
   list-style: none;
 }
 
+/* Élément individuel de la liste : sans padding */
 .competition__card_item {
   padding: 0;
 }
 
+/* Titre des éléments de liste : style en gras avec marges */
 .competition__card_item_title {
   margin: 0.5rem;
   padding: 0.5rem;
@@ -61,38 +73,43 @@
   font-family: var(--font-secondary);
 }
 
+/* Description des éléments de liste : texte en gras avec taille réduite */
 .competition__card_item_desc {
   font-weight: 600;
   font-size: var(--size-sm);
 }
 
-/* Mobile first */
-/* xs */
+/* Approche Mobile First : styles de base pour petits écrans, ajustements pour écrans plus grands */
+
+/* xs : écrans à partir de 475px */
 @media (min-width: 475px) {
+  /* Description : augmentation de la largeur pour plus de lisibilité */
   .competition__description {
     width: 45ch;
   }
 }
 
-/* sm */
+/* sm : écrans à partir de 640px (non utilisé) */
 /* @media (min-width: 640px) {} */
 
-/* md */
+/* md : écrans à partir de 768px (non utilisé) */
 /* @media (min-width: 768px) {} */
 
-/* lg */
+/* lg : écrans à partir de 1024px */
 @media (min-width: 1024px) {
+  /* Conteneur des compétitions : centrage des cartes avec espacement accru */
   .competition__container {
     justify-content: center;
     gap: 2rem;
   }
+  /* Cartes de compétition : augmentation de la largeur */
   .competition__card {
     width: 340px;
   }
 }
 
-/* xl */
+/* xl : écrans à partir de 1280px (non utilisé) */
 /* @media (min-width: 1280px) {} */
 
-/* 2xl */
+/* 2xl : écrans à partir de 1536px (non utilisé) */
 /* @media (min-width: 1536px) {} */

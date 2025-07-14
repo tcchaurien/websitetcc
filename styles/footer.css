@@ -1,32 +1,36 @@
+/* Styles pour le pied de page : disposition en colonne, centrée, avec fond blanc */
 footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  z-index: 7;
+  z-index: 7; /* Assure que le pied de page reste au-dessus des autres éléments */
   gap: 1rem;
   background-color: var(--clr-white);
 }
 
+/* Conteneur des informations de contact : carte avec dégradé et ombre */
 .footer__contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   gap: 1rem;
-  width: 280px;
+  width: 280px; /* Largeur fixe pour mobile */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   border-radius: 25px;
   background: linear-gradient(to bottom, var(--clr-red), var(--clr-yellow));
 }
 
+/* Images utilisées dans les sections de contact : dimensions et style */
 .contact__image {
   height: 60px;
   border-radius: 5px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Sections de contact (téléphone, email, adresse) et lien email : disposition flexible, texte blanc */
 .contact__telephone,
 .contact__email,
 .contact__adresse,
@@ -39,6 +43,8 @@ footer {
   color: white;
   font-family: var(--font-secondary);
 }
+
+/* Code commenté : styles alternatifs pour email et adresse (non utilisés) */
 /* 
 .contact_email {
   display: flex;
@@ -46,7 +52,6 @@ footer {
   font-size: var(--size-sm);
   font-weight: 700;
   color: white;
-
   font-family: var(--open-sans);
 }
 
@@ -59,30 +64,32 @@ footer {
   font-family: var(--open-sans);
 } */
 
+/* Carte Google Maps : style avec bord arrondi et ombre */
 .google__map {
   border-radius: 5px;
-  width: 90%;
+  width: 90%; /* Largeur relative pour mobile */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Bouton de fermeture du pied de page : couleur de remplissage (non utilisé dans le HTML actuel) */
 .close-footer-button {
   fill: black;
 }
 
-/* Mobile first */
+/* Approche Mobile First : styles de base pour petits écrans, ajustements pour écrans plus grands */
 
-/* xs */
+/* xs : écrans à partir de 475px (non utilisé) */
 /* @media (min-width: 475px) {} */
 
-/* sm */
+/* sm : écrans à partir de 640px (non utilisé) */
 /* @media (min-width: 640px) {} */
 
-/* md */
+/* md : écrans à partir de 768px (non utilisé) */
 /* @media (min-width: 768px) {} */
 
-/* lg */
-
+/* lg : écrans à partir de 1024px */
 @media (min-width: 1024px) {
+  /* Conteneur des contacts : disposition en ligne pour desktop, largeur maximale */
   .footer__contact {
     display: flex;
     flex-direction: row;
@@ -91,6 +98,7 @@ footer {
     max-width: 1100px;
   }
 
+  /* Ajustement de la taille de police pour téléphone, email et adresse */
   .contact__telephone,
   .contact__email,
   .contact__adresse {
@@ -100,13 +108,15 @@ footer {
     font-size: var(--size-xxs);
   }
 
+  /* Ajustement de la largeur de la carte Google Maps */
   .google__map {
     width: 300px;
   }
 }
 
-/* xl */
+/* xl : écrans à partir de 1280px */
 @media (min-width: 1280px) {
+  /* Augmentation de la taille de police pour téléphone, email et adresse */
   .contact__telephone,
   .contact__email,
   .contact__adresse {
@@ -117,5 +127,5 @@ footer {
   }
 }
 
-/* 2xl */
+/* 2xl : écrans à partir de 1536px (non utilisé) */
 /* @media (min-width: 1536px) {} */

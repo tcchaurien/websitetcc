@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <!-- Métadonnées et ressources externes pour configurer la page -->
     <meta charset="UTF-8" />
+    <!-- Encodage UTF-8 pour compatibilité avec tous les caractères -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsive design pour adapter la page aux appareils mobiles -->
     <link rel="shortcut icon" href="/img/logo.png" type="image/png" />
+    <!-- Favicon affiché dans l'onglet du navigateur -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bibliothèque AOS pour animations au défilement -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Préconnexion aux serveurs Google Fonts pour optimiser le chargement -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+    <!-- Importation des polices Open Sans et Roboto Mono -->
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <!-- Bibliothèque LineIcons pour les icônes des réseaux sociaux -->
     <link rel="canonical" href="https://tcchaurien.fr/tarifs.html" />
+    <!-- URL canonique pour éviter les problèmes de contenu dupliqué (SEO) -->
     <link rel="stylesheet" href="./styles/moder-normalize.css" />
+    <!-- Normalisation des styles CSS entre navigateurs -->
     <link rel="stylesheet" href="./styles/global.css" />
+    <!-- Styles globaux appliqués à toute la page -->
     <link rel="stylesheet" href="./styles/header.css" />
+    <!-- Styles spécifiques pour l'en-tête -->
     <link rel="stylesheet" href="./styles/components/tarifs.css" />
+    <!-- Styles pour la section des tarifs -->
     <link rel="stylesheet" href="./styles/footer.css" />
+    <!-- Styles pour le pied de page -->
     <link rel="stylesheet" href="./styles/utils.css" />
+    <!-- Classes utilitaires réutilisables (marges, padding, etc.) -->
     <title>TC Chaurien - Tarifs</title>
+    <!-- Titre de la page pour l'onglet du navigateur -->
     <meta
       name="description"
-      content="Découvrez les offres et tarifs du TC Chaurien, Club de Tennis de la vile de Castelnaudary"
+      content="Découvrez les offres et tarifs du TC Chaurien, Club de Tennis de la ville de Castelnaudary"
     />
+    <!-- Description pour le référencement SEO -->
     <meta name="keywords" content="tennis, club, castelnaudary, tarifs, tcchaurien, tcc, tc chaurien, chaurien" />
+    <!-- Mots-clés pour améliorer le référencement -->
     <meta name="author" content="Thomas P." />
-    <!-- Google tag (gtag.js) -->
+    <!-- Auteur du site -->
+    <!-- Intégration de Google Analytics pour le suivi des visites -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-FGL197VBSP"
@@ -37,13 +56,16 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-FGL197VBSP");
     </script>
+    <!-- Script pour initialiser Google Analytics -->
   </head>
   <body>
+    <!-- Corps principal de la page -->
     <header class="header container">
+      <!-- En-tête avec logo, menu de navigation et liens sociaux -->
       <div class="header__title_container box" data-aos="fade-down-right">
+        <!-- Conteneur pour le logo et le titre avec animation AOS -->
         <a href="/index.html">  
           <img
             src="/img/logo.png"
@@ -53,12 +75,18 @@
             class="header__logo"
           />
         </a>  
+        <!-- Lien vers la page d'accueil avec logo -->
         <h2 class="header__title">TC CHAURIEN</h2>
+        <!-- Titre principal de l'en-tête -->
       </div>
       <nav>
+        <!-- Menu de navigation principal -->
         <input type="checkbox" id="sidebar-active" />
+        <!-- Checkbox pour activer/désactiver le menu mobile -->
         <label id="overlay" for="sidebar-active"></label>
+        <!-- Overlay pour le menu mobile -->
         <div class="header__menu box" data-aos="fade-down">
+          <!-- Conteneur du menu avec animation AOS -->
           <label for="sidebar-active" class="close-sidebar-button">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
               <path
@@ -66,45 +94,45 @@
               />
             </svg>
           </label>
+          <!-- Bouton pour fermer le menu mobile -->
           <img
             src="/img/logo blanc.png"
             alt="logo blanc"
             class="header__logo_sidebar"
           />
+          <!-- Logo alternatif pour le menu mobile -->
           <ul class="header__menu_list">
+            <!-- Liste des éléments du menu principal -->
             <li class="header__menu_items">
-              <a href="/index.html" class="header__menu_link"
-                >Le Club
-              </a>
+              <a href="/index.html" class="header__menu_link">Le Club</a>
+              <!-- Lien direct vers la page du club -->
             </li>
             <li class="header__menu_items">
-              <a href="/cours.html" class="header__menu_link">Les Cours </a>
-                </a>
+              <a href="/cours.html" class="header__menu_link">Les Cours</a>
+              <!-- Lien vers la page des cours -->
             </li>
             <li class="header__menu_items">
-              <a href="/tarifs.html" class="header__menu_link">Les Tarifs </a>
-                <ul class="header__submenu box">
-                  <li class="header__submenu_items">
-                    <a href="#section_tarifs_membres" class="header__submenu_link"
-                      >Carte et Licence</a
-                    >
-                  </li>
-                  <li class="header__submenu_items">
-                    <a href="#section_tarifs_cours" class="header__submenu_link">Cours</a>
-                  </li>
-
-                  <li class="header__submenu_items">
-                    <a href="#section_modalite" class="header__submenu_link"
-                      >Modalités Paiement</a
-                    >
-                  </li>
-                </ul>
+              <a href="/tarifs.html" class="header__menu_link">Les Tarifs</a>
+              <!-- Menu déroulant pour les sous-sections des tarifs -->
+              <ul class="header__submenu box">
+                <li class="header__submenu_items">
+                  <a href="#section_tarifs_membres" class="header__submenu_link">Carte et Licence</a>
+                </li>
+                <li class="header__submenu_items">
+                  <a href="#section_tarifs_cours" class="header__submenu_link">Cours</a>
+                </li>
+                <li class="header__submenu_items">
+                  <a href="#section_modalite" class="header__submenu_link">Modalités Paiement</a>
+                </li>
+              </ul>
             </li>
             <li class="header__menu_items contact_menu">
-              <a href="/contact.html" class="header__menu_link">Contacts </a>
+              <a href="/contact.html" class="header__menu_link">Contacts</a>
+              <!-- Lien vers la page de contact -->
             </li>
           </ul>
           <div class="header__mobile_social_container">
+            <!-- Icônes des réseaux sociaux pour le menu mobile -->
             <a
               href="https://www.facebook.com/people/TC-Chaurien/61565931810032/"
               target="_blank"
@@ -123,12 +151,13 @@
               title="Instagram"
               aria-label="instagram link"
             >
-              <i class="lni lni-instagram-original"></i
-            ></a>
+              <i class="lni lni-instagram-original"></i>
+            </a>
           </div>
         </div>
       </nav>
       <div class="header__button_container box" data-aos="fade-down-left">
+        <!-- Conteneur pour les icônes sociales et le bouton de contact -->
         <div class="header__social_container">
           <a
             href="https://www.facebook.com/people/TC-Chaurien/61565931810032/"
@@ -148,10 +177,11 @@
             title="Instagram"
             aria-label="instagram link"
           >
-            <i class="lni lni-instagram-original"></i
-          ></a>
+            <i class="lni lni-instagram-original"></i>
+          </a>
         </div>
         <a href="contact.html" class="header__button btn">Contact</a>
+        <!-- Bouton de contact dans l'en-tête -->
       </div>
       <label for="sidebar-active" class="open-sidebar-button">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
@@ -160,12 +190,16 @@
           />
         </svg>
       </label>
+      <!-- Bouton pour ouvrir le menu mobile -->
     </header>
+
+    <!-- Section principale des tarifs : aperçu général -->
     <section class="tarifs container" id="section_tarifs">
       <div
         class="tarifs__overview_container main_card_container"
         data-aos="flip-right"
       >
+        <!-- Conteneur pour la description générale des tarifs -->
         <h2
           class="tarifs__overview_title main_card_title"
           data-aos="flip-right"
@@ -174,12 +208,14 @@
         </h2>
         <p class="tarifs__overview_description main_card_desc">
           Le TC Chaurien propose différents tarifs pour l'adhésion au club et
-          les différents cours Jeune et Adutles.
+          les différents cours Jeunes et Adultes.
         </p>
         <p class="tarifs__overview_comment main_card_comment">
           Découvrez nos différentes offres ci-dessous et sur <strong><a href="https://tenup.fft.fr/club/60110028/offres" target="_blank" style="color: #170647;">Tenup</a></strong>
         </p>
+        <!-- Lien vers la plateforme Tenup pour plus de détails -->
         <ul class="tarifs__overview_list main_card_list">
+          <!-- Liste des catégories de tarifs -->
           <li class="tarifs__overview_list_item main_card_item">
             <div class="tarifs__overview_list_title main_card_item_title">
               Carte de Membre
@@ -201,10 +237,8 @@
               >
                 Les cours adultes collectifs sont dispensés en soirée la
                 semaine. 2 offres pour les cours collectifs : 1h30 par semaine
-                et 2 x 1h30 par semaine
-
-                <br /><br />
-                Des seances individuelles sont également possibles.
+                et 2 x 1h30 par semaine. <br /><br />
+                Des séances individuelles sont également possibles.
               </p>
             </div>
           </li>
@@ -220,15 +254,20 @@
         </ul>
       </div>
     </section>
+
+    <!-- Section des cartes membres : tarifs d'adhésion -->
     <section class="tarifs__membres container" id="section_tarifs_membres">
       <div class="tarifs__adhesion_container">
+        <!-- Conteneur pour les cartes d'adhésion -->
         <h2 class="tarifs__adhesion_title section_title">
           Les Cartes Membres
         </h2>
         <p class="tarifs__adhesion_card_comment">
           Tarif par an avec licence FFT | Saison 2024-2025
         </p>
+        <!-- Indication de la période et inclusion de la licence FFT -->
         <div class="tarifs__adhesion_card_container box">
+          <!-- Grille des cartes de tarifs avec animations AOS -->
           <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
             <h3 class="tarifs__adhesion_card_title">1 Enfant</h3>
             <p class="tarifs__adhesion_card_description">68€</p>
@@ -258,22 +297,25 @@
             <h2 class="tarifs__adhesion_card_description">268€</h2>
           </div>
           <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
-            <h3 class="tarifs__adhesion_card_title">Couple + 2 Enfant</h3>
+            <h3 class="tarifs__adhesion_card_title">Couple + 2 Enfants</h3>
             <h2 class="tarifs__adhesion_card_description">319€</h2>
           </div>
           <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
-            <h3 class="tarifs__adhesion_card_title">Couple + 3 Enfant</h3>
+            <h3 class="tarifs__adhesion_card_title">Couple + 3 Enfants</h3>
             <h2 class="tarifs__adhesion_card_description">355€</h2>
           </div>
           <div class="tarifs__adhesion_card card__tarif" data-aos="flip-right">
-            <h3 class="tarifs__adhesion_card_title">Couple + 4 Enfant</h3>
+            <h3 class="tarifs__adhesion_card_title">Couple + 4 Enfants</h3>
             <h2 class="tarifs__adhesion_card_description">400€</h2>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Section des cours : tarifs pour adultes, jeunes et cours individuels -->
     <section class="tarifs__cours container" id="section_tarifs_cours">
       <div class="tarifs__adhesion_container">
+        <!-- Tarifs pour les cours adultes -->
         <h2 class="tarifs__adhesion_title section_title">
           Les Cours Adultes
         </h2>
@@ -287,10 +329,10 @@
             <h3 class="tarifs__adhesion_card_title">Collectif 2x1H30</h3>
             <h2 class="tarifs__adhesion_card_description">500€</h2>
           </div>
-          
         </div>
       </div>
       <div class="tarifs__adhesion_container">
+        <!-- Tarifs pour les cours jeunes -->
         <h2 class="tarifs__adhesion_title section_title">
           Les Cours Jeunes
         </h2>
@@ -320,10 +362,10 @@
             <h3 class="tarifs__adhesion_card_title">Compétition 2x1H30</h3>
             <h2 class="tarifs__adhesion_card_description">350€</h2>
           </div>
-      
         </div>  
       </div>
       <div class="tarifs__adhesion_container">
+        <!-- Tarifs pour les cours individuels -->
         <h2 class="tarifs__adhesion_title section_title">
           Cours Individuel
         </h2>
@@ -332,14 +374,13 @@
           <h3 class="tarifs__adhesion_card_title">1H</h3>
           <p class="tarifs__adhesion_card_description">25€</p>
         </div>
-      
-        </div>  
-      </div>
-
-
+      </div>  
     </section>
+
+    <!-- Section des modalités de paiement -->
     <section class="modalite container" id="section_modalite">
       <div class="modalite_container">
+        <!-- Conteneur pour les options de paiement -->
         <h2 class="modalite__title section_title">Modalités de Paiement</h2>
         <p
           class="tarifs__adhesion_card_comment tarifs__adhesion_card_comment"
@@ -363,8 +404,11 @@
         </div>
       </div>
     </section>
+
+    <!-- Pied de page : informations de contact et carte Google Maps -->
     <footer class="footer container" data-aos="zoom-in">
       <div class="footer__contact box">
+        <!-- Coordonnées du club avec téléphone, email et adresse -->
         <div class="contact__telephone">
           <img
             src="/img/contact.jpg"
@@ -380,8 +424,7 @@
             class="contact__image"
           />
           <a href="mailto:tcchaurien11@gmail.com" class="contact__email_link"
-            >tcchaurien11@gmail.com</a
-          >
+            >tcchaurien11@gmail.com</a>
         </div>
         <div class="contact__adresse">
           <img
@@ -403,23 +446,23 @@
           allowfullscreen="true"
           loading="lazy"
         ></iframe>
+        <!-- Carte Google Maps intégrée pour localiser le club -->
       </div>
       <h2 class="footer__title">TC Chaurien</h2>
       <p>🎾 2025 🎾</p>
+      <!-- Signature du pied de page -->
     </footer>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <!-- <div style="height: 500vh"></div> -->
-    <div class="script">
-      <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-      <script>
-        // Get the button
-        let mybutton = document.getElementById("myBtn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
+    <!-- Bouton de retour en haut et scripts JavaScript -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- Bouton pour remonter en haut de la page -->
+    <div class="script">
+      <script>
+        // Script pour gérer l'affichage du bouton de retour en haut
+        let mybutton = document.getElementById("myBtn");
         window.onscroll = function () {
           scrollFunction();
         };
-
         function scrollFunction() {
           if (
             document.body.scrollTop > 20 ||
@@ -430,8 +473,6 @@
             mybutton.style.display = "none";
           }
         }
-
-        // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
@@ -441,6 +482,7 @@
       <script>
         AOS.init();
       </script>
+      <!-- Initialisation de la bibliothèque AOS pour les animations au défilement -->
     </div>
   </body>
 </html>

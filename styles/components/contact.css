@@ -1,51 +1,61 @@
+/* Fichier transféré */
+/* Fichier pas encore validé */
+
+/* Section de contact : disposition en colonne, centrée, avec image de fond */
 .contact {
   display: flex;
   justify-items: center;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  background-image: url(/img/fond.jpg);
+  gap: 1rem; /* Espacement entre les éléments */
+  background-image: url(/img/fond.jpg); /* Image de fond */
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
-  border-radius: 25px;
+  background-size: cover; /* Couvre tout le conteneur */
+  background-position: 50%; /* Centrage de l'image */
+  border-radius: 25px; /* Bords arrondis */
 }
 
+/* Conteneur principal des informations de contact : fond blanc semi-transparent */
 .contact_container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  width: 90%;
-  max-width: 420px;
+  gap: 1rem; /* Espacement entre les éléments */
+  width: 90%; /* Largeur relative pour mobile */
+  max-width: 420px; /* Limite la largeur maximale */
   padding: 1.5rem;
   border-radius: 15px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
 }
 
+/* Sous-conteneur des coordonnées : disposition en colonne, largeur fixe */
 .contact__contact {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  width: 280px;
+  gap: 1rem; /* Espacement entre les coordonnées */
+  width: 280px; /* Largeur fixe pour mobile */
 }
 
+/* Titre de la section de contact : centré avec taille de police moyenne */
 .contact__title {
   font-size: var(--size-lg);
   text-align: center;
-  width: 80%;
+  width: 80%; /* Limite la largeur du titre */
 }
+
+/* Description de la section de contact : texte centré */
 .contact__description {
   text-align: center;
 }
 
+/* Coordonnées (téléphone, email, adresse) : disposition flexible avec style de texte */
 .telephone,
 .email,
 .adresse {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.5rem; /* Espacement réduit entre image et texte */
   align-items: center;
   font-size: var(--size-sm);
   font-weight: 700;
-  font-family: var(--font-secondary);
+  font-family: var(--font-secondary); /* Police spécifique pour les coordonnées */
 }

@@ -1,37 +1,44 @@
+/* Fichier transféré */
+/* Fichier pas encore validé */
+
+/* Section animations : disposition en colonne, centrée, avec wrapping et hauteur adaptative */
 .animations {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  height: auto;
+  gap: 1rem; /* Espacement entre les éléments */
+  height: auto; /* Hauteur adaptative au contenu */
 }
 
+/* Conteneur du contenu des animations : disposition flexible avec wrapping et espacement */
 .animations__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 2rem; /* Espacement accru entre les cartes */
   padding: 15px;
 }
 
+/* Cartes individuelles dans le contenu : disposition en colonne, style avec dégradé et ombre */
 .animations__content div {
   display: flex;
   flex-direction: column;
-  flex-grow: 0;
-  flex-shrink: 0;
+  flex-grow: 0; /* Pas d'agrandissement */
+  flex-shrink: 0; /* Pas de rétrécissement */
   justify-content: start;
   align-items: center;
-  gap: 1rem;
+  gap: 1rem; /* Espacement interne */
   padding: 1rem;
-  width: 280px;
-  height: auto;
+  width: 280px; /* Largeur fixe pour mobile */
+  height: auto; /* Hauteur adaptative */
   border-radius: 15px;
-  background: linear-gradient(to bottom, var(--clr-red), var(--clr-yellow));
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(to bottom, var(--clr-red), var(--clr-yellow)); /* Dégradé rouge à jaune */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Ombre pour effet de profondeur */
 }
 
+/* Images dans les cartes : dimensions fixes, bord arrondi et ombre */
 .animations__content div img {
   height: 150px;
   width: 150px;
@@ -39,18 +46,21 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* Titres (h3) dans les cartes : texte blanc, police spécifique et taille augmentée */
 .animations__content div h3 {
   color: var(--clr-white);
   font-family: var(--font-secondary);
   font-size: var(--size-2xl);
-  line-height: 1.2;
+  line-height: 1.2; /* Hauteur de ligne pour lisibilité */
 }
 
+/* Paragraphes dans les cartes : texte en gras avec taille standard */
 .animations__content div p {
   font-weight: 600;
   font-size: var(--size-base);
 }
 
+/* Listes dans les cartes : texte en gras avec taille standard */
 .animations__content div ul {
   font-weight: 600;
   font-size: var(--size-base);

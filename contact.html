@@ -1,124 +1,138 @@
+<!-- Déclaration du type de document HTML5 et définition de la langue française -->
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/img/logo.png" type="image/png" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-    <link rel="canonical" href="https://tcchaurien.fr/contact.html" />
-    <link rel="stylesheet" href="./styles/moder-normalize.css" />
-    <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/components/contact.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/utils.css" />
-    <title>TC Chaurien - Contactez-nous</title>
-    <meta
-      name="description"
-      content="Contactez le TC Chaurien, Club de Tennis de la vile de Castelnaudary"
-    />
-    <meta
-      name="keywords"
-      content="tennis, club, castelnaudary, tcchaurien, tcc, tc chaurien, chaurien"
-    />
-    <meta name="author" content="Thomas P." />
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-FGL197VBSP"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-FGL197VBSP");
-    </script>
-  </head>
-  <body>
-    <header class="header container">
-      <div class="header__title_container box" data-aos="fade-down-right">
-        <a href="/index.html">
-          <img
-            src="/img/logo.png"
-            alt="Logo du club"
-            width="150"
-            height="150"
-            class="header__logo"
-          />
-        </a>
-        <h2 class="header__title">TC CHAURIEN</h2>
-      </div>
-      <nav>
-        <input type="checkbox" id="sidebar-active" />
-        <label id="overlay" for="sidebar-active"></label>
-        <div class="header__menu box" data-aos="fade-down">
-          <label for="sidebar-active" class="close-sidebar-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-              <path
-                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-              />
-            </svg>
-          </label>
-          <img
-            src="/img/logo blanc.png"
-            alt="logo blanc"
-            class="header__logo_sidebar"
-          />
-          <ul class="header__menu_list">
-            <li class="header__menu_items">
-              <a href="/index.html" class="header__menu_link">Le Club </a>
-            </li>
-            <li class="header__menu_items">
-              <a href="/cours.html" class="header__menu_link">Les Cours </a>
-            </li>
-            <li class="header__menu_items">
-              <a href="/tarifs.html" class="header__menu_link">Les Tarifs </a>
-            </li>
-            <li class="header__menu_items contact_menu">
-              <a href="" class="header__menu_link">Contacts </a>
-            </li>
-          </ul>
-          <div class="header__mobile_social_container">
-            <a
-              href="https://www.facebook.com/people/TC-Chaurien/61565931810032/"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="header__mobile_social_icons"
-              title="Facebook"
-              aria-label="facebook link"
-            >
-              <i class="lni lni-facebook-original"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/tcchaurien/"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="header__mobile_social_icons"
-              title="Instagram"
-              aria-label="instagram link"
-            >
-              <i class="lni lni-instagram-original"></i
-            ></a>
-          </div>
-        </div>
-      </nav>
-      <div class="header__button_container box" data-aos="fade-down-left">
-        <div class="header__social_container">
+<!-- Métadonnées et ressources externes pour configurer la page -->
+<head>
+  <!-- Encodage UTF-8 pour compatibilité avec tous les caractères -->
+  <meta charset="UTF-8" />
+  <!-- Responsive design pour adapter la page aux appareils mobiles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon affiché dans l'onglet du navigateur -->
+  <link rel="shortcut icon" href="/img/logo.png" type="image/png" />
+  <!-- Bibliothèque AOS pour animations au défilement -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Préconnexion aux serveurs Google Fonts pour optimiser le chargement -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Importation des polices Open Sans et Roboto Mono -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Bibliothèque LineIcons pour les icônes des réseaux sociaux -->
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <!-- URL canonique pour éviter les problèmes de contenu dupliqué (SEO) -->
+  <link rel="canonical" href="https://tcchaurien.fr/contact.html" />
+  <!-- Normalisation des styles CSS entre navigateurs -->
+  <link rel="stylesheet" href="./styles/moder-normalize.css" />
+  <!-- Styles globaux appliqués à toute la page -->
+  <link rel="stylesheet" href="./styles/global.css" />
+  <!-- Styles spécifiques pour l'en-tête -->
+  <link rel="stylesheet" href="./styles/header.css" />
+  <!-- Styles pour la section de contact -->
+  <link rel="stylesheet" href="./styles/components/contact.css" />
+  <!-- Styles pour le pied de page -->
+  <link rel="stylesheet" href="./styles/footer.css" />
+  <!-- Classes utilitaires réutilisables (marges, padding, etc.) -->
+  <link rel="stylesheet" href="./styles/utils.css" />
+  <!-- Titre de la page pour l'onglet du navigateur -->
+  <title>TC Chaurien - Contactez-nous</title>
+  <!-- Description pour le référencement SEO -->
+  <meta
+    name="description"
+    content="Contactez le TC Chaurien, Club de Tennis de la ville de Castelnaudary"
+  />
+  <!-- Mots-clés pour améliorer le référencement -->
+  <meta
+    name="keywords"
+    content="tennis, club, castelnaudary, tcchaurien, tcc, tc chaurien, chaurien"
+  />
+  <!-- Auteur du site -->
+  <meta name="author" content="Thomas P." />
+  <!-- Intégration de Google Analytics pour le suivi des visites -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-FGL197VBSP"
+  ></script>
+  <!-- Script pour initialiser Google Analytics -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-FGL197VBSP");
+  </script>
+</head>
+
+<!-- Corps principal de la page -->
+<body>
+  <!-- En-tête avec logo, menu de navigation et liens sociaux -->
+  <header class="header container">
+    <!-- Conteneur pour le logo et le titre avec animation AOS -->
+    <div class="header__title_container box" data-aos="fade-down-right">
+      <!-- Lien vers la page d'accueil avec logo -->
+      <a href="/index.html">
+        <img
+          src="/img/logo.png"
+          alt="Logo du club"
+          width="150"
+          height="150"
+          class="header__logo"
+        />
+      </a>
+      <!-- Titre principal de l'en-tête -->
+      <h2 class="header__title">TC CHAURIEN</h2>
+    </div>
+    <!-- Menu de navigation principal -->
+    <nav>
+      <!-- Checkbox pour activer/désactiver le menu mobile -->
+      <input type="checkbox" id="sidebar-active" />
+      <!-- Overlay pour le menu mobile -->
+      <label id="overlay" for="sidebar-active"></label>
+      <!-- Conteneur du menu avec animation AOS -->
+      <div class="header__menu box" data-aos="fade-down">
+        <!-- Bouton pour fermer le menu mobile -->
+        <label for="sidebar-active" class="close-sidebar-button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </label>
+        <!-- Logo alternatif pour le menu mobile -->
+        <img
+          src="/img/logo blanc.png"
+          alt="logo blanc"
+          class="header__logo_sidebar"
+        />
+        <!-- Liste des éléments du menu principal -->
+        <ul class="header__menu_list">
+          <li class="header__menu_items">
+            <!-- Lien direct vers la page du club -->
+            <a href="/index.html" class="header__menu_link">Le Club</a>
+          </li>
+          <li class="header__menu_items">
+            <!-- Lien vers la page des cours -->
+            <a href="/cours.html" class="header__menu_link">Les Cours</a>
+          </li>
+          <li class="header__menu_items">
+            <!-- Lien vers la page des tarifs -->
+            <a href="/tarifs.html" class="header__menu_link">Les Tarifs</a>
+          </li>
+          <li class="header__menu_items contact_menu">
+            <!-- Lien pour la page actuelle (contact) -->
+            <a href="" class="header__menu_link">Contacts</a>
+          </li>
+        </ul>
+        <!-- Icônes des réseaux sociaux pour le menu mobile -->
+        <div class="header__mobile_social_container">
           <a
             href="https://www.facebook.com/people/TC-Chaurien/61565931810032/"
             target="_blank"
             rel="noreferrer noopener"
-            class="header__social_icons"
+            class="header__mobile_social_icons"
             title="Facebook"
             aria-label="facebook link"
           >
@@ -128,117 +142,147 @@
             href="https://www.instagram.com/tcchaurien/"
             target="_blank"
             rel="noreferrer noopener"
-            class="header__social_icons"
+            class="header__mobile_social_icons"
             title="Instagram"
             aria-label="instagram link"
           >
-            <i class="lni lni-instagram-original"></i
-          ></a>
+            <i class="lni lni-instagram-original"></i>
+          </a>
         </div>
       </div>
-      <label for="sidebar-active" class="open-sidebar-button">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-          <path
-            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
-          />
-        </svg>
-      </label>
-    </header>
-    <section class="contact container">
-      <div class="contact_container box">
-        <h1 class="contact__title">
-          Contacter le club de Tennis de Castelnaudary
-        </h1>
-
-        <div class="contact__contact box">
-          <div class="telephone">
-            <img
-              src="/img/contact.jpg"
-              alt="Balle qui téléphone"
-              class="contact__image"
-            />
-            <h2>04-68-23-46-36</h2>
-          </div>
-          <div class="email">
-            <img
-              src="/img/email.jpg"
-              alt="Balle dans un ordinateur"
-              class="contact__image"
-            />
-            <a href="mailto:tcchaurien11@gmail.com" class="mail__link"
-              >tcchaurien11@gmail.com</a
-            >
-          </div>
-
-          <div class="adresse">
-            <img
-              src="/img/carte.jpg"
-              alt="Balle qui regarde une carte"
-              class="contact__image"
-            />
-            <div class="adresse">
-              Av. du Maréchal Leclerc,<br />
-              11400 Castelnaudary
-            </div>
-          </div>
-
-          <iframe
-            class="google_map"
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d943.3201409255677!2d1.9487295209530184!3d43.31579212173161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sfr!4v1723119291061!5m2!1sfr!2sfr"
-            width="200"
-            height="100"
-            style="border: 0"
-            allowfullscreen="true"
-            loading="lazy"
-          ></iframe>
-        </div>
-        <p class="contact__description">
-          Vous pouvez également utiliser le formulaire
-          <strong
-            ><a
-              href="https://tenup.fft.fr/club/60110028/contact/formulaire"
-              target="_blank"
-              style="color: #170647"
-              >Tenup</a
-            ></strong
-          >
-        </p>
+    </nav>
+    <!-- Conteneur pour les icônes sociales -->
+    <div class="header__button_container box" data-aos="fade-down-left">
+      <div class="header__social_container">
+        <a
+          href="https://www.facebook.com/people/TC-Chaurien/61565931810032/"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="header__social_icons"
+          title="Facebook"
+          aria-label="facebook link"
+        >
+          <i class="lni lni-facebook-original"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/tcchaurien/"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="header__social_icons"
+          title="Instagram"
+          aria-label="instagram link"
+        >
+          <i class="lni lni-instagram-original"></i>
+        </a>
       </div>
-    </section>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <!-- <div style="height: 500vh"></div> -->
-    <div class="script">
-      <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-      <script>
-        // Get the button
-        let mybutton = document.getElementById("myBtn");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-          scrollFunction();
-        };
-
-        function scrollFunction() {
-          if (
-            document.body.scrollTop > 20 ||
-            document.documentElement.scrollTop > 20
-          ) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
-        }
-      </script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
     </div>
-  </body>
+    <!-- Bouton pour ouvrir le menu mobile -->
+    <label for="sidebar-active" class="open-sidebar-button">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+        <path
+          d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+        />
+      </svg>
+    </label>
+  </header>
+
+  <!-- Section de contact : coordonnées et formulaire externe -->
+  <section class="contact container">
+    <!-- Conteneur principal pour les informations de contact -->
+    <div class="contact_container box">
+      <!-- Titre principal de la section -->
+      <h1 class="contact__title">
+        Contacter le club de Tennis de Castelnaudary
+      </h1>
+      <!-- Coordonnées du club -->
+      <div class="contact__contact box">
+        <!-- Numéro de téléphone avec illustration -->
+        <div class="telephone">
+          <img
+            src="/img/contact.jpg"
+            alt="Balle qui téléphone"
+            class="contact__image"
+          />
+          <h2>04-68-23-46-36</h2>
+        </div>
+        <!-- Adresse email avec lien cliquable -->
+        <div class="email">
+          <img
+            src="/img/email.jpg"
+            alt="Balle dans un ordinateur"
+            class="contact__image"
+          />
+          <a href="mailto:tcchaurien11@gmail.com" class="mail__link"
+            >tcchaurien11@gmail.com</a>
+        </div>
+        <!-- Adresse physique du club -->
+        <div class="adresse">
+          <img
+            src="/img/carte.jpg"
+            alt="Balle qui regarde une carte"
+            class="contact__image"
+          />
+          <div class="adresse">
+            Av. du Maréchal Leclerc,<br />
+            11400 Castelnaudary
+          </div>
+        </div>
+        <!-- Carte Google Maps intégrée pour localiser le club -->
+        <iframe
+          class="google_map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d943.3201409255677!2d1.9487295209530184!3d43.31579212173161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sfr!4v1723119291061!5m2!1sfr!2sfr"
+          width="200"
+          height="100"
+          style="border: 0"
+          allowfullscreen="true"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <!-- Lien vers le formulaire de contact externe sur Tenup -->
+      <p class="contact__description">
+        Vous pouvez également utiliser le formulaire
+        <strong
+          ><a
+            href="https://tenup.fft.fr/club/60110028/contact/formulaire"
+            target="_blank"
+            style="color: #170647"
+            >Tenup</a
+          ></strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- Bouton pour remonter en haut de la page -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  <!-- Scripts JavaScript pour fonctionnalités interactives -->
+  <div class="script">
+    <!-- Script pour gérer l'affichage du bouton de retour en haut -->
+    <script>
+      let mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- Initialisation de la bibliothèque AOS pour les animations au défilement -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </div>
+</body>
 </html>

@@ -1,19 +1,17 @@
-/* Fichier transféré  */
-/* Fichier pas encore validé */
-
+/* Variables CSS globales : polices, couleurs et tailles pour une cohérence sur tout le site */
 :root {
-  /* Fonts */
-  --font-primary: "Open Sans", sans-serif;
-  --font-secondary: "Roboto Mono", monospace;
+  /* Polices utilisées dans le site */
+  --font-primary: "Open Sans", sans-serif; /* Police principale pour le texte général */
+  --font-secondary: "Roboto Mono", monospace; /* Police secondaire pour les titres et éléments spécifiques */
 
-  /* Colors */
-  --clr-dark: #110001;
-  --clr-white: #fff;
-  --clr-light: #e2e8f0;
-  --clr-red: #e30613;
-  --clr-yellow: #fcea01;
+  /* Couleurs personnalisées */
+  --clr-dark: #110001; /* Couleur sombre pour le texte et fonds */
+  --clr-white: #fff; /* Blanc pour fonds et textes */
+  --clr-light: #e2e8f0; /* Gris clair pour accents et focus */
+  --clr-red: #e30613; /* Rouge pour boutons et éléments principaux */
+  --clr-yellow: #fcea01; /* Jaune pour survols et dégradés */
 
-  /* Sizes */
+  /* Tailles de police modulaires */
   --size-xxs: 0.5rem;
   --size-xs: 0.75rem;
   --size-sm: 0.875rem;
@@ -31,84 +29,98 @@
   --size-10xl: 10rem;
 }
 
+/* Réinitialisation des marges et paddings pour tous les éléments */
 * {
   margin: 0;
   padding: 0;
-  line-height: calc(1em+0.5rem);
+  line-height: calc(1em + 0.5rem); /* Hauteur de ligne calculée pour lisibilité */
 }
 
+/* Configuration du défilement fluide et prévention du débordement horizontal */
 html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+  scroll-behavior: smooth; /* Défilement fluide pour les ancres */
+  overflow-x: hidden; /* Évite le défilement horizontal indésirable */
 }
 
+/* Styles de base pour le corps du site : police, couleur et largeur minimale */
 body {
-  font-family: var(--font-primary);
-  background-color: var(--clr-white);
-  color: var(--clr-dark);
-  min-width: 320px;
+  font-family: var(--font-primary); /* Police principale par défaut */
+  background-color: var(--clr-white); /* Fond blanc */
+  color: var(--clr-dark); /* Texte sombre */
+  min-width: 320px; /* Largeur minimale pour compatibilité mobile */
 }
+
+/* Gestion des médias : images, vidéos et SVG avec largeur maximale */
 img,
 picture,
 video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
+  max-width: 100%; /* S'assure que les médias ne dépassent pas leur conteneur */
 }
 
+/* Héritage de la police pour les éléments de formulaire */
 input,
 button,
 textarea,
 select {
-  font: inherit;
+  font: inherit; /* Hérite de la police du parent */
 }
 
+/* Styles de base pour les boutons : réinitialisation et héritage */
 button {
   border: none;
   background: none;
   color: inherit;
-  cursor: pointer;
+  cursor: pointer; /* Curseur de clic pour indiquer l'interactivité */
 }
 
+/* Style pour les focus visibles sur boutons et liens : contour clair */
 button:focus-visible,
 a:focus-visible {
-  outline: solid var(--clr-light);
+  outline: solid var(--clr-light); /* Contour pour l'accessibilité */
 }
 
+/* Ajustement des titres : légère réduction de l'espacement des lettres */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025em; /* Espacement réduit pour une meilleure lisibilité */
 }
 
+/* Style par défaut des paragraphes : couleur sombre */
 p {
   color: var(--clr-dark);
 }
 
+/* Style par défaut des liens : sombre, sans soulignement */
 a {
   color: var(--clr-dark);
   text-decoration: none;
-  display: inline-block;
+  display: inline-block; /* Permet des transformations comme le padding */
 }
 
+/* Style pour les éléments en gras : couleur claire et poids élevé */
 strong {
   color: var(--clr-light);
   font-weight: 900;
 }
 
-/* Scrollbar */
+/* Personnalisation de la barre de défilement pour navigateurs WebKit */
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 10px; /* Largeur de la barre de défilement */
 }
 
+/* Piste de la barre de défilement : transparente */
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0); /* Ombre transparente */
 }
 
+/* Poignée de la barre de défilement : couleur rouge */
 body::-webkit-scrollbar-thumb {
   background-color: var(--clr-red);
 }

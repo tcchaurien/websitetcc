@@ -1,14 +1,11 @@
-/* Fichier transféré  */
-/* Fichier pas encore validé */
-
-/* CCS global de la page  */
+/* Styles globaux pour l'en-tête : disposition flexible et centrage */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* ### Logo et Titre ###  */
+/* Conteneur pour le logo et le titre : disposition flexible avec espacement */
 .header__title_container {
   display: flex;
   justify-content: flex-start;
@@ -16,11 +13,13 @@
   gap: 1rem;
 }
 
+/* Style du logo principal : dimensions fixes */
 .header__logo {
   width: 70px;
   height: 70px;
 }
 
+/* Style du logo dans la barre latérale mobile : positionnement absolu */
 .header__logo_sidebar {
   position: absolute;
   display: flex;
@@ -29,17 +28,19 @@
   align-self: center;
 }
 
+/* Style du titre principal : taille et police personnalisées */
 .header__title {
   font-size: var(--size-xl);
   font-family: var(--font-secondary);
   font-weight: 500;
 }
 
+/* Menu principal : masqué par défaut sur mobile */
 .header__menu {
   display: none;
 }
 
-/* ### Menu au format sidebar ### */
+/* Menu en format barre latérale (mobile) : affiché lorsque la checkbox est cochée */
 #sidebar-active:checked ~ .header__menu {
   display: flex;
   flex-direction: column;
@@ -53,6 +54,7 @@
   z-index: 10;
 }
 
+/* Liste des éléments du menu : disposition verticale avec espacement */
 .header__menu_list {
   display: flex;
   flex-direction: column;
@@ -63,12 +65,14 @@
   padding: 0;
 }
 
+/* Éléments du menu : disposition flexible avec espacement */
 .header__menu_items {
   display: flex;
   gap: 50px;
   list-style: none;
 }
 
+/* Liens du menu principal : style du texte et transition */
 .header__menu_link {
   display: flex;
   justify-content: center;
@@ -81,10 +85,12 @@
   transition: all 0.3s ease;
 }
 
+/* Effet au survol des liens du menu : décalage horizontal */
 .header__menu_link:hover {
   translate: 20px 0;
 }
 
+/* Sous-menu : masqué par défaut, positionné absolument avec dégradé */
 .header__submenu {
   position: absolute;
   display: none;
@@ -101,6 +107,7 @@
   transition: all 0.2s ease-in-out;
 }
 
+/* Affichage du sous-menu au survol : opacité et interactions activées */
 .header__menu_items:hover .header__submenu {
   margin-top: 0;
   opacity: 1;
@@ -108,12 +115,14 @@
   pointer-events: auto;
 }
 
+/* Éléments du sous-menu : sans marge et pleine largeur */
 .header__submenu_items {
   margin: 0;
   width: 100%;
   list-style: none;
 }
 
+/* Liens du sous-menu : style du texte et padding */
 .header__submenu_link {
   display: inline-block;
   padding: 0.5rem 0.5rem;
@@ -124,17 +133,18 @@
   text-decoration: none;
 }
 
+/* Effet au survol des liens du sous-menu : texte en gras et décalage */
 .header__submenu_link:hover {
   font-weight: 900;
   translate: 5% 0;
 }
 
-/* ###### CSS pour les contrôle du menu ####### */
+/* Checkbox pour contrôler le menu mobile : masquée */
 #sidebar-active {
   display: none;
 }
 
-/* ### Bouton 3 barres ### */
+/* Bouton d'ouverture du menu (3 barres) : affiché sur mobile */
 .open-sidebar-button {
   display: inline;
   width: var(--size-5xl);
@@ -142,11 +152,13 @@
   fill: var(--clr-red);
   transition: 0.15s linear;
 }
+
+/* Effet au survol du bouton d'ouverture : changement de couleur */
 .open-sidebar-button:hover {
   fill: var(--clr-yellow);
 }
 
-/* ### Bouton Fermer ### */
+/* Bouton de fermeture du menu mobile : positionné en haut à droite */
 .close-sidebar-button {
   display: flex;
   justify-self: flex-start;
@@ -158,12 +170,13 @@
   fill: var(--clr-white);
 }
 
-/* ### Bouton Contact ###  */
+/* Conteneur du bouton de contact : masqué sur mobile */
 .header__button_container {
   display: none;
   padding-inline: 1rem;
 }
 
+/* Overlay du menu mobile : affiché lorsque la checkbox est cochée */
 #sidebar-active:checked ~ #overlay {
   height: 100%;
   width: 100%;
@@ -173,20 +186,21 @@
   z-index: 9;
 }
 
-/* #### Social Medias #### */
+/* Conteneur des icônes sociales : disposition flexible avec espacement */
 .header__social_container {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
+/* Icônes sociales : style et taille */
 .header__social_icons {
   color: var(--clr-red);
   line-height: 0;
   font-size: var(--size-3xl);
-  /* text-decoration: none; */
 }
 
+/* Conteneur des icônes sociales pour le menu mobile : centrage */
 .header__mobile_social_container {
   display: flex;
   justify-content: center;
@@ -194,6 +208,7 @@
   gap: 1rem;
 }
 
+/* Icônes sociales dans le menu mobile : style et taille */
 .header__mobile_social_icons {
   font-size: var(--size-4xl);
   color: var(--clr-white);
@@ -201,35 +216,39 @@
   text-decoration: none;
 }
 
-/* xs */
+/* Media Queries pour ajuster les styles selon la taille de l'écran */
+
+/* xs : écrans à partir de 475px */
 @media (min-width: 475px) {
+  /* Menu principal : toujours masqué sur petits écrans */
   .header__menu {
     display: none;
   }
 }
 
-/* sm */
-/* @media (min-width: 640px) {} */
-
-/* md */
+/* md : écrans à partir de 768px */
 @media (min-width: 768px) {
+  /* Ajustement de la taille du titre */
   .header__title {
     font-size: var(--size-2xl);
   }
 }
 
-/* lg */
+/* lg : écrans à partir de 1024px */
 @media (min-width: 1024px) {
+  /* Menu principal : affiché en ligne pour desktop */
   .header__menu {
     display: flex;
     justify-content: center;
     height: fit-content;
   }
 
+  /* Ajustement de la taille du titre */
   .header__title {
     font-size: var(--size-xl);
   }
 
+  /* Liste du menu : disposition en ligne */
   .header__menu_list {
     display: inline-block;
     justify-content: center;
@@ -237,11 +256,13 @@
     height: fit-content;
   }
 
+  /* Éléments du menu : affichage en ligne */
   .header__menu_items {
     display: inline-block;
     list-style: none;
   }
 
+  /* Liens du menu : style pour desktop avec couleur sombre */
   .header__menu_link {
     display: inline-block;
     padding-inline: 1.5rem;
@@ -252,25 +273,30 @@
     transition: all 0.3s ease;
   }
 
+  /* Bouton de fermeture : masqué sur desktop */
   .close-sidebar-button {
     display: none;
   }
 
+  /* Conteneur du bouton de contact : affiché avec espacement */
   .header__button_container {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
   }
 
+  /* Bouton d'ouverture du menu : masqué sur desktop */
   .open-sidebar-button {
     display: none;
   }
 
+  /* Effet au survol des liens du menu : changement de couleur et décalage vertical */
   .header__menu_link:hover {
     color: var(--clr-red);
     translate: 0 -0.5rem;
   }
 
+  /* Sous-menu : affiché en haut avec ajustement de position */
   .header__submenu {
     display: flex;
     width: 10rem;
@@ -278,36 +304,43 @@
     translate: 0rem;
   }
 
+  /* Logo de la barre latérale : masqué sur desktop */
   .header__logo_sidebar {
     display: none;
   }
 
+  /* Élément du menu Contact : masqué sur desktop */
   .contact_menu {
     display: none;
   }
 
+  /* Icônes sociales du menu mobile : masquées sur desktop */
   .header__mobile_social_container {
     display: none;
   }
 }
 
-/* xl */
+/* xl : écrans à partir de 1280px */
 @media (min-width: 1280px) {
+  /* Ajustement de la taille des liens du menu */
   .header__menu_link {
     font-size: var(--size-2xl);
   }
+  /* Ajustement des dimensions du logo */
   .header__logo {
     width: 120px;
     height: 120px;
   }
 
+  /* Ajustement de la taille du titre */
   .header__title {
     font-size: var(--size-2xl);
   }
 }
 
-/* 2xl */
+/* 2xl : écrans à partir de 1536px */
 @media (min-width: 1536px) {
+  /* Ajustement final de la taille du titre */
   .header__title {
     font-size: var(--size-3xl);
   }

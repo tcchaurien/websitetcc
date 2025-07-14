@@ -1,8 +1,6 @@
-/* Fichier transféré  */
-/* Fichier pas encore validé */
+/* Approche Mobile First : styles de base pour les petits écrans, avec des ajustements progressifs pour les écrans plus grands */
 
-/* Mobile first */
-
+/* Points de rupture pour media queries (non utilisés par défaut, définis pour référence) */
 /* xs */
 /* @media (min-width: 475px) {} */
 
@@ -21,28 +19,33 @@
 /* 2xl */
 /* @media (min-width: 1536px) {} */
 
+/* Styles pour les sections principales : ajout d'une marge supérieure */
 section {
   margin-top: 2rem;
 }
 
+/* Styles pour le pied de page : ajout d'une marge supérieure */
 footer {
   margin-top: 2rem;
 }
 
+/* Conteneur principal : largeur pleine, centrage automatique, et padding pour toutes les tailles d'écran */
 .container {
   width: 100%;
   height: fit-content;
   margin-inline: auto;
   padding: 1rem 0.5rem;
-  /* border: 2px solid rgb(255, 0, 0); */
+  /* border: 2px solid rgb(255, 0, 0); */ /* Commenté : bordure de débogage */
 }
 
+/* Conteneur flexible pour les boîtes : padding et flexibilité */
 .box {
   padding: 0.5em 1em;
   flex: 1;
-  /* border: 2px solid blue; */
+  /* border: 2px solid blue; */ /* Commenté : bordure de débogage */
 }
 
+/* Styles pour les boutons : affichage, couleurs, transitions et bordures */
 .btn {
   display: inline-block;
   background-color: var(--clr-red);
@@ -56,14 +59,18 @@ footer {
   border: 2px solid var(--clr-white);
   text-align: center;
 }
+
+/* Effet au survol du bouton : changement de couleur de fond */
 .btn:hover {
   background-color: var(--clr-yellow);
 }
 
+/* Focus visible pour l'accessibilité : ajout d'une bordure claire */
 .btn:focus-visible {
   outline: solid var(--clr-light);
 }
 
+/* Style des titres de section : alignement, taille de police et fonte */
 .section_title {
   align-items: center;
   padding: 0.5rem 1rem;
@@ -73,7 +80,7 @@ footer {
   line-height: 2rem;
 }
 
-/* ### Style des cartes principales de section ### */
+/* Styles pour les cartes principales des sections : conteneur avec dégradé et ombre */
 .main_card_container {
   display: flex;
   flex-direction: column;
@@ -86,6 +93,7 @@ footer {
   background: linear-gradient(to bottom, var(--clr-red), var(--clr-yellow));
 }
 
+/* Style des titres des cartes principales : fond blanc, ombre et centrage */
 .main_card_title {
   padding: 0.5rem 1rem;
   border-radius: 50px;
@@ -98,6 +106,7 @@ footer {
   text-align: center;
 }
 
+/* Style des descriptions des cartes principales : texte blanc avec largeur limitée */
 .main_card_desc {
   margin-top: 10px;
   width: 25ch;
@@ -106,11 +115,13 @@ footer {
   line-height: 1.2rem;
 }
 
+/* Style des commentaires des cartes principales : texte clair et taille réduite */
 .main_card_comment {
   color: var(--clr-light);
   font-size: var(--size-sm);
 }
 
+/* Style des listes dans les cartes principales : disposition en colonne sans puces */
 .main_card_list {
   display: flex;
   flex-direction: column;
@@ -118,10 +129,12 @@ footer {
   list-style: none;
 }
 
+/* Style des éléments de liste dans les cartes principales : sans padding */
 .main_card_item {
   padding: 0;
 }
 
+/* Style des titres des éléments de liste : fond blanc, ombre et centrage */
 .main_card_item_title {
   margin: 0.5rem;
   padding: 0.5rem;
@@ -134,34 +147,39 @@ footer {
   text-align: center;
 }
 
+/* Style des descriptions des éléments de liste : texte en gras */
 .main_card_item_desc {
   font-weight: 600;
   font-size: var(--size-sm);
 }
 
-/* ##### FlipCard ###### */
+/* Styles pour les cartes interactives (flipcards) : conteneur avec perspective */
 .flipcard_container {
   width: 280px;
   height: 400px;
   perspective: 800px;
 }
 
+/* Variante paysage des flipcards : dimensions adaptées */
 .flipcard_container_paysage {
   width: 400px;
   height: 280px;
   perspective: 800px;
 }
 
+/* Effet de survol pour les flipcards : rotation de 180 degrés */
 .flipcard_container:hover > .flipcard {
   cursor: pointer;
   transform: rotateY(180deg);
 }
 
+/* Effet de survol pour les flipcards en mode paysage : rotation de 180 degrés */
 .flipcard_container_paysage:hover > .flipcard {
   cursor: pointer;
   transform: rotateY(180deg);
 }
 
+/* Structure des flipcards : position relative, transition et préservation 3D */
 .flipcard {
   height: 100%;
   width: 100%;
@@ -170,6 +188,7 @@ footer {
   transform-style: preserve-3d;
 }
 
+/* Styles pour les faces avant et arrière des flipcards : dimensions, bordures et ombre */
 .flipcard_front,
 .flipcard_back {
   height: 100%;
@@ -181,6 +200,7 @@ footer {
   display: flex;
 }
 
+/* Style du titre sur la face avant des flipcards : fond semi-transparent et positionnement */
 .flipcard_front h2 {
   background-color: rgba(255, 255, 255, 0.5);
   position: absolute;
@@ -189,6 +209,7 @@ footer {
   text-align: center;
 }
 
+/* Style des icônes SVG sur la face avant des flipcards : positionnement en haut à droite */
 .flipcard_front p {
   position: absolute;
   margin-top: 0.5rem;
@@ -198,6 +219,7 @@ footer {
   fill: white;
 }
 
+/* Style de la face arrière des flipcards : centrage du contenu avec rotation de 180 degrés */
 .flipcard_back {
   display: flex;
   flex-direction: column;
@@ -206,6 +228,7 @@ footer {
   transform: rotateY(180deg);
 }
 
+/* Style du texte sur la face arrière des flipcards : fond semi-transparent et texte en gras */
 .flipcard_back p {
   width: 95%;
   border-radius: 5px;
@@ -216,7 +239,7 @@ footer {
   text-align: start;
 }
 
-/* ###scroll to top btn ### */
+/* Style du bouton de retour en haut : position fixe, style et comportement */
 #myBtn {
   display: none;
   position: fixed;
@@ -235,86 +258,80 @@ footer {
   z-index: 99;
 }
 
+/* Effet au survol du bouton de retour en haut : changement de couleur de fond */
 #myBtn:hover {
   background-color: var(--clr-yellow);
 }
 
-/* ###Media Queries### */
-/* xs */
+/* Media Queries pour ajuster les styles selon la taille de l'écran */
+
+/* xs : écrans à partir de 475px */
 @media (min-width: 475px) {
   .container {
     max-width: 475px;
   }
 }
 
-/* sm */
+/* sm : écrans à partir de 640px */
 @media (min-width: 640px) {
+  /* Ajustement de la largeur maximale du conteneur */
   .container {
     max-width: 640px;
   }
 
+  /* Ajustement de la largeur et du padding des cartes principales */
   .main_card_container {
     width: 350px;
     padding: 1.5rem;
   }
 
+  /* Augmentation de la taille du texte pour les titres des cartes */
   .main_card_title {
     font-size: var(--size-3xl);
     line-height: 2rem;
-    /* text-align: center; */
   }
 
+  /* Ajustement de la largeur et de la taille du texte des descriptions */
   .main_card_desc {
     width: 32ch;
     font-size: var(--size-base);
     line-height: 1.2rem;
   }
 
+  /* Ajustement de la largeur et de la taille du texte des commentaires */
   .main_card_comment {
     width: 35ch;
     font-size: var(--size-base);
   }
 
+  /* Augmentation de la taille du texte pour les titres des éléments de liste */
   .main_card_item_title {
     font-size: var(--size-lg);
-    /* margin: 0.5rem; */
-    /* padding: 0.5rem; */
-    /* background-color: var(--clr-white); */
-    /* border-radius: 50px; */
-    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); */
-    /* font-weight: 700; */
-    /* font-family: var(--font-secondary); */
-    /* text-align: center; */
   }
-
-  /* .main_card_item_desc {
-    font-weight: 600;
-    font-size: var(--size-sm);
-  } */
 }
 
-/* md */
+/* md : écrans à partir de 768px */
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
 
-/* lg */
+/* lg : écrans à partir de 1024px */
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
   }
 }
 
-/* xl */
+/* xl : écrans à partir de 1280px */
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
   }
 }
 
-/* 2xl */
+/* 2xl : écrans à partir de 1536px */
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;

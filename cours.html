@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <!-- Métadonnées et ressources externes pour configurer la page -->
     <meta charset="UTF-8" />
+    <!-- Encodage UTF-8 pour compatibilité avec tous les caractères -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsive design pour adapter la page aux appareils mobiles -->
     <link rel="shortcut icon" href="/img/logo.png" type="image/png" />
+    <!-- Favicon affiché dans l'onglet du navigateur -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bibliothèque AOS pour animations au défilement -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Préconnexion aux serveurs Google Fonts pour optimiser le chargement -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
+    <!-- Importation des polices Open Sans et Roboto Mono -->
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <!-- Bibliothèque LineIcons pour les icônes des réseaux sociaux -->
     <link rel="canonical" href="https://tcchaurien.fr/cours.html" />
+    <!-- URL canonique pour éviter les problèmes de contenu dupliqué (SEO) -->
     <link rel="stylesheet" href="./styles/moder-normalize.css" />
+    <!-- Normalisation des styles CSS entre navigateurs -->
     <link rel="stylesheet" href="./styles/global.css" />
+    <!-- Styles globaux appliqués à toute la page -->
     <link rel="stylesheet" href="./styles/header.css" />
+    <!-- Styles spécifiques pour l'en-tête -->
     <link rel="stylesheet" href="./styles/components/cours.css" />
+    <!-- Styles pour la section des cours -->
     <link rel="stylesheet" href="./styles/footer.css" />
+    <!-- Styles pour le pied de page -->
     <link rel="stylesheet" href="./styles/utils.css" />
+    <!-- Classes utilitaires réutilisables (marges, padding, etc.) -->
     <title>TC Chaurien - Cours</title>
+    <!-- Titre de la page pour l'onglet du navigateur -->
     <meta
       name="description"
-      content="Découvrez les cours proposé par le TC Chaurien, Club de Tennis de la vile de Castelnaudary. Cours Adulte, Mini Tennis, Club Junior. Des cours pour tous niveaux et tous âges"
+      content="Découvrez les cours proposés par le TC Chaurien, Club de Tennis de la ville de Castelnaudary. Cours Adultes, Mini Tennis, Club Junior. Des cours pour tous niveaux et tous âges"
     />
+    <!-- Description pour le référencement SEO -->
     <meta name="keywords" content="tennis, club, castelnaudary, aude, cours, tcchaurien, tcc, tc chaurien, chaurien" />
+    <!-- Mots-clés pour améliorer le référencement -->
     <meta name="author" content="Thomas P." />
-    <!-- Google tag (gtag.js) -->
+    <!-- Auteur du site -->
+    <!-- Intégration de Google Analytics pour le suivi des visites -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-FGL197VBSP"
@@ -37,13 +56,16 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-FGL197VBSP");
     </script>
+    <!-- Script pour initialiser Google Analytics -->
   </head>
   <body>
+    <!-- Corps principal de la page -->
     <header class="header container">
+      <!-- En-tête avec logo, menu de navigation et liens sociaux -->
       <div class="header__title_container box" data-aos="fade-down-right">
+        <!-- Conteneur pour le logo et le titre avec animation AOS -->
         <a href="/index.html">
           <img
             src="/img/logo.png"
@@ -52,13 +74,19 @@
             height="150"
             class="header__logo"
           />
-        </a>  
+        </a>
+        <!-- Lien vers la page d'accueil avec logo -->
         <h2 class="header__title">TC CHAURIEN</h2>
+        <!-- Titre principal de l'en-tête -->
       </div>
       <nav>
+        <!-- Menu de navigation principal -->
         <input type="checkbox" id="sidebar-active" />
+        <!-- Checkbox pour activer/désactiver le menu mobile -->
         <label id="overlay" for="sidebar-active"></label>
+        <!-- Overlay pour le menu mobile -->
         <div class="header__menu box" data-aos="fade-down">
+          <!-- Conteneur du menu avec animation AOS -->
           <label for="sidebar-active" class="close-sidebar-button">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
               <path
@@ -66,42 +94,42 @@
               />
             </svg>
           </label>
+          <!-- Bouton pour fermer le menu mobile -->
           <img
             src="/img/logo blanc.png"
             alt="logo blanc"
             class="header__logo_sidebar"
           />
+          <!-- Logo alternatif pour le menu mobile -->
           <ul class="header__menu_list">
+            <!-- Liste des éléments du menu principal -->
             <li class="header__menu_items">
-              <a href="/index.html" class="header__menu_link"
-                >Le Club
-              </a>
+              <a href="/index.html" class="header__menu_link">Le Club</a>
+              <!-- Lien direct vers la page du club -->
             </li>
             <li class="header__menu_items">
-              <a href="" class="header__menu_link">Les Cours </a>
-              
-                  <ul class="header__submenu box">
-                    <li class="header__submenu_items">
-                      <a href="#section_equipe" class="header__submenu_link"
-                        >Equipe Pédagogique</a
-                      >
-                    </li>
-                    <li class="header__submenu_items">
-                      <a href="#section_cours" class="header__submenu_link"
-                        >Les Cours</a
-                      >
-                    </li>
-                  </ul>
-              </li>
+              <a href="" class="header__menu_link">Les Cours</a>
+              <!-- Menu déroulant pour les sous-sections des cours -->
+              <ul class="header__submenu box">
+                <li class="header__submenu_items">
+                  <a href="#section_equipe" class="header__submenu_link">Equipe Pédagogique</a>
+                </li>
+                <li class="header__submenu_items">
+                  <a href="#section_cours" class="header__submenu_link">Les Cours</a>
+                </li>
+              </ul>
             </li>
             <li class="header__menu_items">
-              <a href="/tarifs.html" class="header__menu_link">Les Tarifs </a>
+              <a href="/tarifs.html" class="header__menu_link">Les Tarifs</a>
+              <!-- Lien vers la page des tarifs -->
             </li>
             <li class="header__menu_items contact_menu">
-              <a href="/contact.html" class="header__menu_link">Contacts </a>
+              <a href="/contact.html" class="header__menu_link">Contacts</a>
+              <!-- Lien vers la page de contact -->
             </li>
           </ul>
           <div class="header__mobile_social_container">
+            <!-- Icônes des réseaux sociaux pour le menu mobile -->
             <a
               href="https://www.facebook.com/people/TC-Chaurien/61565931810032/"
               target="_blank"
@@ -120,12 +148,13 @@
               title="Instagram"
               aria-label="instagram link"
             >
-              <i class="lni lni-instagram-original"></i
-            ></a>
+              <i class="lni lni-instagram-original"></i>
+            </a>
           </div>
         </div>
       </nav>
       <div class="header__button_container box" data-aos="fade-down-left">
+        <!-- Conteneur pour les icônes sociales et le bouton de contact -->
         <div class="header__social_container">
           <a
             href="https://www.facebook.com/people/TC-Chaurien/61565931810032/"
@@ -145,10 +174,11 @@
             title="Instagram"
             aria-label="instagram link"
           >
-            <i class="lni lni-instagram-original"></i
-          ></a>
+            <i class="lni lni-instagram-original"></i>
+          </a>
         </div>
         <a href="contact.html" class="header__button btn">Contact</a>
+        <!-- Bouton de contact dans l'en-tête -->
       </div>
       <label for="sidebar-active" class="open-sidebar-button">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
@@ -157,22 +187,26 @@
           />
         </svg>
       </label>
+      <!-- Bouton pour ouvrir le menu mobile -->
     </header>
+
+    <!-- Section de l'équipe pédagogique : présentation des coachs -->
     <section class="equipe container" id="section_equipe">
       <div
         class="equipe__overview_container main_card_container"
         data-aos="flip-right"
       >
+        <!-- Aperçu de l'équipe pédagogique avec animation AOS -->
         <h2 class="equipe__overview_title main_card_title">
           Equipe pédagogique
         </h2>
         <p class="equipe__overview_description main_card_desc">
           Suite au départ de Frank durant cette saison 2024-2025, l’école de tennis se réorganise temporairement pour assurer un encadrement de qualité tout au long de l’année. <br><br>
-
           Rares et Pierrick rejoignent l’équipe pour accompagner les jeunes éducateurs dans l’enseignement du tennis, aussi bien pour les jeunes que pour les adultes.
         </p>
-
+        <!-- Description de la transition et des nouveaux éducateurs -->
         <ul class="equipe__overview_list main_card_list">
+          <!-- Liste des rôles dans l'équipe pédagogique -->
           <li class="equipe__overview_list_item main_card_item">
             <div class="equipe__overview_list_title main_card_item_title">
               Coach du club
@@ -185,19 +219,18 @@
             <div class="equipe__overview_list_title main_card_item_title">
               Les Educateurs
             </div>
-            <div>
-              <p
-                class="equipe__overview_list_description main_card_item_desc"
-              >
-                L'équipe pédagogique est composée de 5 éducateurs qui
-                accompagnent les jeunes chauriens dans leur apprentissage du
-                tennis.
-              </p>
-            </div>
+            <p
+              class="equipe__overview_list_description main_card_item_desc"
+            >
+              L'équipe pédagogique est composée de 5 éducateurs qui
+              accompagnent les jeunes chauriens dans leur apprentissage du
+              tennis.
+            </p>
           </li>
         </ul>
       </div>
       <div class="flipcard_container">
+        <!-- Carte interactive (flipcard) pour présenter Rares -->
         <div class="coach__presentation flipcard">
           <div class="coach__presentation_front_2 flipcard_front">
             <h2>Rares</h2>
@@ -218,14 +251,14 @@
           <div class="coach__presentation_back_2 flipcard_back">
             <p>
               Passionné de tennis depuis l’enfance, j’ai découvert ce sport à 10 ans à Cluj-Napoca. En 2019, en Guyane, j’ai repris le tennis, intégrant rapidement le milieu local et participant à des compétitions pour affiner mes compétences.
-
-En tant qu’éducateur, j’ai eu le plaisir de transmettre cette passion aux jeunes, renforçant mon envie d’accompagner joueurs et joueuses dans leur progression. Actuellement classé 15/5 et visant 15/2, je combine entraînement et encadrement, en m’investissant pleinement dans leur développement, qu’ils soient jeunes ou adultes. <br /><br />
+              En tant qu’éducateur, j’ai eu le plaisir de transmettre cette passion aux jeunes, renforçant mon envie d’accompagner joueurs et joueuses dans leur progression. Actuellement classé 15/5 et visant 15/2, je combine entraînement et encadrement, en m’investissant pleinement dans leur développement, qu’ils soient jeunes ou adultes. <br /><br />
               Rares
             </p>
           </div>
         </div>
       </div>
       <div class="flipcard_container">
+        <!-- Carte interactive (flipcard) pour présenter Pierrick -->
         <div class="coach__presentation flipcard">
           <div class="coach__presentation_front_1 flipcard_front">
             <h2>Pierrick</h2>
@@ -246,33 +279,35 @@ En tant qu’éducateur, j’ai eu le plaisir de transmettre cette passion aux j
           <div class="coach__presentation_back_1 flipcard_back">
             <p>
               J’ai découvert le tennis à 6 ans au TC Chaurien, où ma passion m’a conduit à devenir champion départemental et boursier. Dès 13 ans, j’ai commencé à encadrer de jeunes joueurs, développant mes compétences pédagogiques.
-
-              Aujourd’hui classé 15/1, je combine pratique personnelle et coaching, avec pour mission de transmettre les valeurs du tennis et d’accompagner chaque joueur dans sa progression.<br /><br />
+              Aujourd’hui classé 15/1, je combine pratique personnelle et coaching, avec pour mission de transmettre les valeurs du tennis et d’accompagner chaque joueur dans sa progression. <br /><br />
               Pierrick
             </p>
           </div>
         </div>
       </div>
-      
     </section>
+
+    <!-- Section des cours : détails sur les cours jeunes et adultes -->
     <section class="cours container" id="section_cours">
       <div
         class="cours__overview_container main_card_container"
         data-aos="flip-right"
       >
+        <!-- Cours pour les jeunes avec animation AOS -->
         <h2 class="cours__overview_title main_card_title">Cours Jeunes</h2>
         <p class="cours__overview_description main_card_desc">
           Les cours collectifs jeunes sont dispensés le mercredi et le samedi
           matin. Il y a trois niveaux en fonction de l'âge.
         </p>
-
+        <!-- Description des horaires et niveaux -->
         <ul class="cours__overview_list main_card_list">
+          <!-- Liste des catégories de cours jeunes -->
           <li class="cours__overview_list_item main_card_item">
             <div class="cours__overview_list_title main_card_item_title">
               Mini Tennis
             </div>
             <p class="equipe__overview_list_description main_card_item_desc">
-              La section Mini-Tennis s'addresse aux enfants de 3 à 6 ans qui
+              La section Mini-Tennis s'adresse aux enfants de 3 à 6 ans qui
               souhaitent s'initier à la pratique du tennis. Des activités
               ludiques sont proposées.
             </p>
@@ -281,23 +316,19 @@ En tant qu’éducateur, j’ai eu le plaisir de transmettre cette passion aux j
             <div class="cours__overview_list_title main_card_item_title">
               Club Junior
             </div>
-            <div>
-              <p class="cours__overview_list_description main_card_item_desc">
-                Le Club Junior permet comme le mini tennis de s'initier au
-                tennis et cette section s'adresse aux enfants de 7 à 18 ans.
-              </p>
-            </div>
+            <p class="cours__overview_list_description main_card_item_desc">
+              Le Club Junior permet comme le mini tennis de s'initier au
+              tennis et cette section s'adresse aux enfants de 7 à 18 ans.
+            </p>
           </li>
           <li class="cours__overview_list_item main_card_item">
             <div class="cours__overview_list_title main_card_item_title">
               Compétition
             </div>
-            <div>
-              <p class="cours__overview_list_description main_card_item_desc">
-                Cette section s'addresse aux enfants de 7 à 18 ans souhaitant
-                pratiquer le tennis en compétition.
-              </p>
-            </div>
+            <p class="cours__overview_list_description main_card_item_desc">
+              Cette section s'adresse aux enfants de 7 à 18 ans souhaitant
+              pratiquer le tennis en compétition.
+            </p>
           </li>
         </ul>
       </div>
@@ -305,16 +336,21 @@ En tant qu’éducateur, j’ai eu le plaisir de transmettre cette passion aux j
         class="cours__overview_container main_card_container"
         data-aos="flip-right"
       >
+        <!-- Cours pour les adultes avec animation AOS -->
         <h2 class="cours__overview_title main_card_title">Cours Adultes</h2>
         <p class="cours__overview_description main_card_desc">
-          Les cours collectifs adutles sont dispensés en soirée pendant la
+          Les cours collectifs adultes sont dispensés en soirée pendant la
           semaine de septembre à juin en groupe de 6 à 8 personnes. Chaque
           session dure 1h30.
         </p>
+        <!-- Description des horaires et format des cours -->
       </div>
     </section>
+
+    <!-- Pied de page : informations de contact et carte Google Maps -->
     <footer class="footer container" data-aos="zoom-in">
       <div class="footer__contact box">
+        <!-- Coordonnées du club avec téléphone, email et adresse -->
         <div class="contact__telephone">
           <img
             src="/img/contact.jpg"
@@ -330,8 +366,7 @@ En tant qu’éducateur, j’ai eu le plaisir de transmettre cette passion aux j
             class="contact__image"
           />
           <a href="mailto:tcchaurien11@gmail.com" class="contact__email_link"
-            >tcchaurien11@gmail.com</a
-          >
+            >tcchaurien11@gmail.com</a>
         </div>
         <div class="contact__adresse">
           <img
@@ -353,23 +388,23 @@ En tant qu’éducateur, j’ai eu le plaisir de transmettre cette passion aux j
           allowfullscreen="true"
           loading="lazy"
         ></iframe>
+        <!-- Carte Google Maps intégrée pour localiser le club -->
       </div>
       <h2 class="footer__title">TC Chaurien</h2>
       <p>🎾 2025 🎾</p>
+      <!-- Signature du pied de page -->
     </footer>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-    <!-- <div style="height: 500vh"></div> -->
-    <div class="script">
-      <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
-      <script>
-        // Get the button
-        let mybutton = document.getElementById("myBtn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
+    <!-- Bouton de retour en haut et scripts JavaScript -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- Bouton pour remonter en haut de la page -->
+    <div class="script">
+      <script>
+        // Script pour gérer l'affichage du bouton de retour en haut
+        let mybutton = document.getElementById("myBtn");
         window.onscroll = function () {
           scrollFunction();
         };
-
         function scrollFunction() {
           if (
             document.body.scrollTop > 20 ||
@@ -380,8 +415,6 @@ En tant qu’éducateur, j’ai eu le plaisir de transmettre cette passion aux j
             mybutton.style.display = "none";
           }
         }
-
-        // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
@@ -391,6 +424,7 @@ En tant qu’éducateur, j’ai eu le plaisir de transmettre cette passion aux j
       <script>
         AOS.init();
       </script>
+      <!-- Initialisation de la bibliothèque AOS pour les animations au défilement -->
     </div>
   </body>
 </html>
