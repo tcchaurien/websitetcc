@@ -54,7 +54,7 @@
 
 /* Face avant de l'équipe pédagogique : image différente (incohérence avec l'arrière) */
 .equipe_pedagogique__presentation_front,
-.coach__presentation_back {
+.equipe_pedagogique__presentation_back {
   background-image: url(/img/autre.jpg);
   background-size: cover;
   background-position: 50%;
