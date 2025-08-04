@@ -27,12 +27,11 @@
 }
 
 /* Face avant et arrière des cartes de présentation des coachs : image de fond générique */
-.coach__presentation_front_R,
-.coach__presentation_back_R {
+.coach__presentation_front,
+.coach__presentation_back {
   background-image: url(/img/photos/renan.jpg);
   background-size: cover; /* Image couvre tout le conteneur */
   background-position: 50%; /* Centrage de l'image */
-  background-color: rgba(255, 0, 0, 0.3); /* pour visualiser */
 }
 
 /* Face avant et arrière de la carte du coach 1 : image spécifique */
