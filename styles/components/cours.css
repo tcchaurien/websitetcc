@@ -29,7 +29,7 @@
 /* Face avant et arrière des cartes de présentation des coachs : image de fond générique */
 .coach__presentation_front_R,
 .coach__presentation_back_R {
-  background-image: url(/img/photos/renan.jpg);
+  background-image: url(/img/photos/couvert.jpg);
   background-size: cover; /* Image couvre tout le conteneur */
   background-position: 50%; /* Centrage de l'image */
 }
@@ -42,7 +42,6 @@
   background-position: 50%;
 }
 
-
 /* Face avant et arrière de la carte du coach 2 : image générique (redondante avec coach principal) */
 .coach__presentation_front_2,
 .coach__presentation_back_2 {
@@ -50,7 +49,6 @@
   background-size: cover;
   background-position: 50%;
 }
-
 
 /* Face avant de l'équipe pédagogique : image différente (incohérence avec l'arrière) */
 .equipe_pedagogique__presentation_front,
