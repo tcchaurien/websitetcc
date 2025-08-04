@@ -34,22 +34,6 @@
   background-position: 50%; /* Centrage de l'image */
 }
 
-/* Face avant et arrière de la carte du coach 1 : image spécifique */
-.coach__presentation_front_1,
-.coach__presentation_back_1 {
-  background-image: url(/img/photos/coach1.jpg);
-  background-size: cover;
-  background-position: 50%;
-}
-
-/* Face avant et arrière de la carte du coach 2 : image générique (redondante avec coach principal) */
-.coach__presentation_front_2,
-.coach__presentation_back_2 {
-  background-image: url(/img/prof.jpg);
-  background-size: cover;
-  background-position: 50%;
-}
-
 /* Face avant de l'équipe pédagogique : image différente (incohérence avec l'arrière) */
 .equipe_pedagogique__presentation_front,
 .equipe_pedagogique__presentation_back {
