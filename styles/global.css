@@ -8,8 +8,8 @@
   --clr-dark: #110001; /* Couleur sombre pour le texte et fonds */
   --clr-white: #fff; /* Blanc pour fonds et textes */
   --clr-light: #e2e8f0; /* Gris clair pour accents et focus */
-  --clr-red: #fd6c9e; /* Rouge pour boutons et éléments principaux red=#e30613 pink=#fd6c9e*/
-  --clr-yellow: #f9a2ac; /* Jaune pour survols et dégradés jaune=#fcea01 pinklight=#f9a2ac*/
+  --clr-red: #d4af37; /* Rouge pour boutons et éléments principaux red=#e30613 pink=#fd6c9e gold=#d4af37*/
+  --clr-yellow: #ffd700; /* Jaune pour survols et dégradés jaune=#fcea01 pinklight=#f9a2ac silver=#c0c0c0 */
 
   /* Tailles de police modulaires */
   --size-xxs: 0.5rem;
